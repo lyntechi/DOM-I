@@ -41,6 +41,14 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
+<<<<<<< HEAD
+=======
+// ## Task 1: Create selectors to point your data into elements
+
+// * [ ] Create selectors by using any of the DOM element's methods
+// * [ ] Note that IDs have been used on all images. Use the IDs to update src path content
+
+>>>>>>> 9a3b681d6d48d03f3f413d1ceefb9bf517815015
 let servicesLinkOne = document.getElementsByTagName("a")[0]
 servicesLinkOne.textContent = siteContent.nav["nav-item-1"]
 console.log(servicesLinkOne);
@@ -60,6 +68,7 @@ servicesLinkFive.textContent = siteContent.nav["nav-item-5"]
 let servicesLinkSix = document.getElementsByTagName("a")[5]
 servicesLinkSix.textContent = siteContent.nav["nav-item-6"]
 
+<<<<<<< HEAD
 let ctaH1 = document.querySelector(".cta-text h1");
 ctaH1.textContent = siteContent.cta.h1;
 ctaH1.style.fontFamily = 'Bangers', 'cursive';
@@ -137,3 +146,51 @@ contactEmail.textContent = siteContent["contact"]["email"]
 
 let footerCopyRight = document.querySelector("footer p")
 footerCopyRight.textContent = siteContent["footer"]["copyright"]
+=======
+let ctaH1 = document.querySelector(".cta-text");
+ctaH1.textContent = siteContent.cta.h1;
+ctaH1.style.fontFamily = 'Bangers', 'cursive';
+console.log(ctaH1)
+
+let codeSnippetImg = document.querySelector("#cta-img");
+codeSnippetImg.src = siteContent.cta["img-src"]
+console.log(codeSnippetImg)
+
+let getStartedButton = document.querySelector(".cta.button");
+getStartedButton.textContent = siteContent.cta.button;
+console.log(getStartedButton);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ## Task 2: Update the HTML with the JSON data
+
+// * [ ] Remember, NO direct updating of the HTML source is allowed.
+// * [ ] Using your selectors, update the content to match the example file.
+// * [ ] Remember to update the src attributes on images
+
+// ## Task 3: Add new content
+
+// * [ ] Change the color of the navigation text to be green.
+// * [ ] Utilize `.appendChild()` and `.prepend()` to add two new items to the navigation system. You can call them whatever you want.
+// * [ ] Check your work by looking at the [original html](original.html) in the browser
+
+// ## Stretch Goals
+
+// * [ ] Update styles throughout the page as you see fit. Study what happens when you updated the DOM using style in JavaScript.  
+// * [ ] Study tomorrow's lesson on events and try to integrate a button that can update content on the site with a click of a button.  You could build a similar data object with new values to help you test the click event.
+
+// ## Stretch Project: Digital Timer
+
+// This project is heavier on logic but employs some DOM manipulation to achieve its goals.  Go check it out here: [stretch assignment](stretch-assignment) and see how far you can get.
+>>>>>>> 9a3b681d6d48d03f3f413d1ceefb9bf517815015
